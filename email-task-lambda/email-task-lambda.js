@@ -4,16 +4,16 @@ exports.handler = (event, context) => {
     var ecsRegion = 'us-east-1';
     if(event.status == 'stop'){
         var params = {
-            cluster: process.env.ECS_CLUSTER,
-            service: process.env.ECS_SERVICE_NAME,
+            cluster: event.ECS_CLUSTER,
+            service: event.ECS_SERVICE_NAME,
             desiredCount: 0
         };
     }
     else{
         // otherwise : start one task
         var params = {
-            cluster: process.env.ECS_CLUSTER,
-            service: process.env.ECS_SERVICE_NAME,
+            cluster: event.ECS_CLUSTER,
+            service: event.ECS_SERVICE_NAME,
             desiredCount: 1
         };
     }
