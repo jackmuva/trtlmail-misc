@@ -1,4 +1,5 @@
-const aws = require('aws-sdk');
+import * as AWS from 'aws-sdk';
+
 exports.handler = (event, context) => {
     // stop all taks
     var ecsRegion = 'us-east-1';
