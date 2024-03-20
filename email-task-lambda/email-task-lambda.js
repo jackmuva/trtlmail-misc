@@ -1,4 +1,4 @@
-import * as AWS from "@aws-sdk/client-ecs";
+import { ECSClient, UpdateServiceCommand } from "@aws-sdk/client-ecs";
 
 export const handler = async (event, context) => {
     // stop all taks
@@ -18,8 +18,9 @@ export const handler = async (event, context) => {
             desiredCount: 1
         };
     }
-    var ecs = new AWS.ECS({region: ecsRegion});
-    ecs.updateService(params, function (err, data) {
+    const client = new ECSClient(config);
+    const command = new UpdateServiceCommand(params);
+    const response = await client.send(command).then(() => {
         if (err) console.log(err, err.stack); // an error occurred
         else {
             context.succeed();

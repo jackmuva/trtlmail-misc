@@ -16,6 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2dvbcdSYJsRzWDBR1PhsqZDfOCu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jackm/Documents/trtlpost/trtlpost-misc/email-task-lambda",
+    "last_opened_file_path": "C:/Users/jackm/Documents/trtlpost/trtlpost-email-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710891582195</updated>
       <workItem from="1710891582754" duration="841000" />
+      <workItem from="1710951383079" duration="1708000" />
     </task>
     <servers />
   </component>
