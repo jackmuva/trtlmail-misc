@@ -1,6 +1,6 @@
 import * as AWS from "@aws-sdk/client-ecs";
 
-exports.handler = (event, context) => {
+export const handler = async (event, context) => {
     // stop all taks
     var ecsRegion = 'us-east-1';
     if(event.status == 'stop'){
