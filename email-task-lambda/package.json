@@ -2,6 +2,7 @@
   "name": "email-task-lambda",
   "version": "1.0.0",
   "dependencies": {
+    "@aws-sdk/client-ecs": "^3.535.0",
     "aws-sdk": "^2.1581.0"
   }
 }

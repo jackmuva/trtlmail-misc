@@ -1,4 +1,4 @@
-import * as AWS from 'aws-sdk';
+import * as AWS from "@aws-sdk/client-ecs";
 
 exports.handler = (event, context) => {
     // stop all taks
@@ -18,7 +18,7 @@ exports.handler = (event, context) => {
             desiredCount: 1
         };
     }
-    var ecs = new aws.ECS({region: ecsRegion});
+    var ecs = new AWS.ECS({region: ecsRegion});
     ecs.updateService(params, function (err, data) {
         if (err) console.log(err, err.stack); // an error occurred
         else {
